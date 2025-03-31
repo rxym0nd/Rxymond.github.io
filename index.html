@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Bevine💖</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Indie+Flower&family=Parisienne&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel ="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Indie+Flower&family=Parisienne&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Preload important fonts in head -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" as="style">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.0.0/dist/index.umd.js"></script>
 </head>
@@ -27,9 +30,9 @@
     <div class="confetti" style="left:20%; background-color:#ffb6b6;"></div>
     <div class="confetti" style="left:30%; background-color:#ff8e8e;"></div>
 
-    <div class="card">
-        <h2 class="birthday-title">Happy Birthday, My Love💖🎂</h2>
-
+    <!-- Add ARIA labels -->
+    <div class="card" aria-label="Birthday card for my love">
+        <h2 class="birthday-title" aria-live="polite">Happy Birthday, My Love💖🎂</h2>
         <!-- Photo frame -->
         <div class="photo-frame">
             <img src="rideordie.jpg" alt="Your Photo">
@@ -53,7 +56,7 @@
                 <p class="date">Your smile makes life worth living.</p>
                 <p></p>
                 <div class="polaroid">
-                    <img src="her.jpg" alt="The Day We Met">
+                    <img src="her.jpg" alt="The Day We Met" loading = "lazy" >
                     <div class="polaroid-caption">I...</div>
                 </div>
             </div>
@@ -61,7 +64,7 @@
                 <p class="date">It's almost 3 years.</p>
                 <p>🌹 They said we wouldn't get this far😂😂. Let's laugh at them😂😂.</p>
                 <div class="polaroid">
-                    <img src="firstmeet1.jpg" alt="Our First Date">
+                    <img src="firstmeet1.jpg" alt="Our First Date" loading = "lazy">
                     <div class="polaroid-caption">...Love...</div>
                 </div>
             </div>
@@ -69,7 +72,7 @@
                 <p class="date">Neshama Sheli</p>
                 <p>Happy 21st Birthday Neshama Sheli💖🎂.</p>
                 <div class="polaroid">
-                    <img src="IMG-20250331-WA0003.jpg" alt="Special Moments">
+                    <img src="IMG-20250331-WA0003.jpg" alt="Special Moments" loading = "lazy">
                     <div class="polaroid-caption">...You💖.</div>
                 </div>
             </div>
