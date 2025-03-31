@@ -332,63 +332,52 @@ audio:hover {
     }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Mobile Optimization */
+@media (max-width: 480px) {
     .card {
-        width: 90%;
-        height: auto;
-        padding: 30px 20px;
-        min-height: 400px;
-    }
-
-    .birthday-title {
-        font-size: 2rem;
-    }
-
-    .typewriter {
-        font-size: 1rem;
+        min-height: 350px;
         padding: 15px;
     }
-
-    .photo-frame {
-        width: 150px;
-        height: 150px;
-    }
-
-    .love-quotes h2,
-    .timeline h2 {
-        font-size: 2rem;
-    }
-
-    .quote {
-        font-size: 1.1rem;
-    }
-
-    .timeline-item {
-        width: 85%;
-    }
-
-    .timeline-container:before {
-        left: 20px;
-    }
-}
-
-@media (max-width: 480px) {
+    
     .birthday-title {
         font-size: 1.8rem;
+        margin: 10px 0;
     }
-
+    
+    .typewriter {
+        width: 90%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
     .photo-frame {
         width: 120px;
         height: 120px;
     }
-
+    
     .love-quotes,
     .timeline {
         padding: 15px;
     }
+    
+    .quote {
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
+}
 
-    .timeline-item {
-        padding: 15px;
+/* Very Small Screens */
+@media (max-width: 360px) {
+    .birthday-title {
+        font-size: 1.6rem;
     }
+    
+    .typewriter {
+        font-size: 0.9rem;
     }
+    
+    .photo-frame {
+        width: 100px;
+        height: 100px;
+    }
+}
